@@ -40,3 +40,12 @@ h1 {
     background-color: aliceblue;
     border-radius: 10px;
 }
+
+.clr-btn{
+    margin-left: 650px;
+    font-size: 30px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}

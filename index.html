@@ -13,10 +13,14 @@
         <u>STRING COMPARATOR</u>
     </h1>
     <div class="text-container">
-        <input type="text" class="input-txt" id="input1" onkeyup="check()">
-        <input type="text" class="input-txt" id="input2" onkeyup="check()">
+        <input type="text" class="input-txt" placeholder="Enter text" id="input1" onkeyup="check()">
+        <input type="text" class="input-txt" placeholder="Enter text" id="input2" onkeyup="check()">
     </div>
         <p class="text-result" id="textResult"></p>
+
+        <button class="clr-btn" onclick="clearInputs()">
+            Clear
+        </button>
    
 
     <script>
@@ -33,6 +37,14 @@
                 resultElement.innerText = ("Not Matched!!")
                 resultElement.style.color = "red"
             }
+        }
+        function clearInputs(){
+            const input1Element = document.getElementById("input1")
+            input1Element.value = ""
+            const input2Element = document.getElementById("input2")
+            input2Element.value = ""
+            const resultElement = document.getElementById("textResult")
+            resultElement.value = ""
         }
     </script>
 </body>
